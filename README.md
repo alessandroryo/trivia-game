@@ -3,7 +3,7 @@
 > **Name**: Ryo Alessandro Javva Ananda Satriyo
 > **Student Number**: 89018
 
-This is a single player true or false trivia game created by me using Java Command Line Application. In this program, there are six different design patterns that the author is trying to implement. Where there are two creational patterns, namely Singleton and Factory. Next, there are two structural patterns, namely Decorator and Facade. Finally, there are two behavioral patterns, namely Command and Observer. The author combines these design patterns to make the code more efficient to manage, well-organized, and efficient. I decided to do this task myself because I feel there is more flexibility to be creative and add something to the project without having to depend on other members.
+I created a single-player true or false trivia game using Java Command Line Application. In this program, there are six different design patterns that the author is trying to implement. There are two creational patterns, namely Singleton and Factory. Next, there are two structural patterns, namely Decorator and Facade. Finally, there are two behavioral patterns, namely Command and Observer. The author combines these design patterns to make the code more efficient to manage, well-organized, and efficient. I decided to do this task myself because there is more flexibility to be creative and add something to the project without having to depend on other members.
 
 > GitHub Repository: [alessandroryo/trivia-game](https://github.com/alessandroryo/trivia-game)
 
@@ -11,7 +11,7 @@ This is a single player true or false trivia game created by me using Java Comma
 
 ### Singleton
 
-The Singleton design pattern ensures that a class has only one instance and provides a global access point to that instance. In this project, the *Main* class implements the Singleton design pattern to ensure that only one game instance is played simultaneously. This is achieved by making the constructor private and providing a static `getInstance()` method to access a single class instance. The `getInstance()` method is called in the main method, namely the `public static void main(String[] args)` method, and further proves that only one game will be played at a time.
+According to the Singleton design pattern, a class is guaranteed to have only one instance, which also gives that instance a global access point. In this project, the *Main* class implements the Singleton design pattern to ensure that only one game instance is played simultaneously. This is achieved by making the constructor private and providing a static `getInstance()` method to access a single class instance. The `getInstance()` method is called in the main method, namely the `public static void main(String[] args)` method, and further proves that only one game will be played at a time.
 
 **Main.java**
 
@@ -52,7 +52,7 @@ public class Main {
 
 ### Factory
 
-The Factory design pattern is used to create objects without specifying the exact class of object that will be created. In this project, the *TriviaGameFactory* class implements the Factory design pattern by providing a `createTriviaGame()` method that takes a gameType parameter and creates an instance of the appropriate TriviaGame subclass (*EasyTriviaGame*, *MediumTriviaGame*, or *HardTriviaGame*) based on the user's input. This allows the program to create objects of the appropriate class without having to specify the exact class of the object that will be created.
+Without defining the precise class of the object to be constructed, the factory design pattern is used to create objects. In this project, the *TriviaGameFactory* class implements the Factory design pattern by providing a `createTriviaGame()` method that takes a gameType parameter and creates an instance of the appropriate TriviaGame subclass (*EasyTriviaGame*, *MediumTriviaGame*, or *HardTriviaGame*) based on the user's input. As a result, the program can generate objects of the suitable class without needing to declare its specific class beforehand.
 
 **TriviaGameFactory.java**
 
@@ -89,7 +89,7 @@ public class TriviaGameFactory {
 
 ### Decorator
 
-The Decorator design pattern dynamically adds additional behaviors or responsibilities to an object at runtime. In this project, the *TimerDecorator* class implement the Decorator design pattern by adding new functionality to the *TriviaGame* class through *TriviaDecorator* class. The *TimerDecorator* class adds a timer to the game, while the *TriviaDecorator* class is to ensure that TriviaGame is decorated.
+The Decorator design pattern dynamically adds other behaviors or responsibilities to an object at runtime. In this project, the *TimerDecorator* class implement the Decorator design pattern by adding new functionality to the *TriviaGame* class through *TriviaDecorator* class. The *TimerDecorator* class adds a timer to the game, while the *TriviaDecorator* class is to ensure that TriviaGame is decorated.
 
 **TimerDecorator.java**
 
@@ -160,7 +160,7 @@ public class TriviaGameFacade {
 
 ### Command
 
-The Command design pattern is used to encapsulate a request or operation as an object, allowing it to be passed around as a single command. In this project, the *TriviaGameCommand* interface and *StartGameCommand* class implement the Command design pattern by encapsulating the request to start the trivia game as an object. The *StartGameCommand* class has a constructor that takes a TriviaGame object and an `execute()` method that plays the game. This `execute()` method will be called in *Main* class in `startGame()` method.
+A request or operation is packaged as an object and handed around as a single command using the Command design pattern. In this project, the *TriviaGameCommand* interface and *StartGameCommand* class implement the Command design pattern by encapsulating the request to start the trivia game as an object. The *StartGameCommand* class has a constructor that takes a TriviaGame object and an `execute()` method that plays the game. This `execute()` method will be called in *Main* class in `startGame()` method.
 
 **TriviaGameCommand.java**
 
