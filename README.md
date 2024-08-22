@@ -1,8 +1,5 @@
 # True or False Trivia Game
 
-> **Name**: Ryo Alessandro Javva Ananda Satriyo
-> **Student Number**: 89018
-
 I created a single-player true or false trivia game using Java Command Line Application. In this program, there are six different design patterns that the author is trying to implement. There are two creational patterns, namely Singleton and Factory. Next, there are two structural patterns, namely Decorator and Facade. Finally, there are two behavioral patterns, namely Command and Observer. The author combines these design patterns to make the code more efficient to manage, well-organized, and efficient. I decided to do this task myself because there is more flexibility to be creative and add something to the project without having to depend on other members.
 
 > GitHub Repository: [alessandroryo/trivia-game](https://github.com/alessandroryo/trivia-game)
